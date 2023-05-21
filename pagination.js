@@ -100,15 +100,18 @@ function getPageList(totalPages, page, maxLength) {
     $(document).on(
       "click",
       ".pagination li.current-page:not(.active)",
-      function () {
+      function (event) {
+        event.preventDefault();
         return showPage(+$(this).text());
       }
     );
   
-    $('.next-page').on("click", function(){
+    $('.next-page').on("click", function(event){
+        event.preventDefault();
       return showPage(currentPage + 1)
     })
-    $('.previous-page').on("click", function(){
+    $('.previous-page').on("click", function(event){
+        event.preventDefault();
       return showPage(currentPage - 1)
     })
   });

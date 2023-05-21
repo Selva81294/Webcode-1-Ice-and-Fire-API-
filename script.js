@@ -49,15 +49,6 @@ function foot() {
   let newElement = document.createElement("div");
   document.body.append(newElement);
   newElement.setAttribute("class", "pagination");
-    /* newElement.innerHTML = `
-      <li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
-      <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-      <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
-      <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
-      <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-      <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
-      <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>`; */
 }
 foot();
 
